@@ -11,7 +11,7 @@ export default function Page() {
   const year = new Date().getFullYear();
 
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="min-h-screen bg-slate-950 text-white font-[montserrat]">
       <BackgroundGlow />
 
       <div className="mx-auto max-w-6xl px-4 pb-16 pt-6">
