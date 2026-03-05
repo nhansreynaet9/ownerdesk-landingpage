@@ -52,7 +52,7 @@ export default function TopBar() {
             alt="OwnerDesk Logo"
             width={36}
             height={36}
-            className="rounded-xl"
+            className="rounded-md"
             priority
           />
           <div className="font-semibold tracking-tight text-white">
