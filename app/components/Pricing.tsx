@@ -11,17 +11,26 @@ export default function Pricing() {
       </div>
 
       <div className="mt-6 grid gap-3 md:grid-cols-3">
+        {/* Starter */}
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
           <h3 className="font-bold">Starter</h3>
           <p className="mt-2 text-3xl font-black">
-            $0 <span className="text-sm font-semibold text-white/60">/ mo</span>
+            Free{" "}
+            <span className="text-sm font-semibold text-white/60">
+              for 3 months
+            </span>
           </p>
+          <p className="mt-1 text-sm text-white/60">
+            Then <span className="font-bold text-white">$5</span>/mo
+          </p>
+
           <ul className="mt-4 space-y-2 text-sm text-white/75">
-            <li>• Up to 10 staff</li>
+            <li>• Up to 5 staff</li>
             <li>• Attendance tracking</li>
             <li>• Basic sales records</li>
             <li>• Limited AI queries</li>
           </ul>
+
           <a
             href="#cta"
             className="mt-5 inline-flex w-full justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-cyan-400 px-4 py-2 font-extrabold text-slate-950"
@@ -30,6 +39,7 @@ export default function Pricing() {
           </a>
         </div>
 
+        {/* Pro */}
         <div className="relative rounded-3xl border border-cyan-300/25 bg-white/10 p-6 shadow-2xl shadow-black/40">
           <div className="absolute right-4 top-4 rounded-full border border-cyan-300/25 bg-cyan-400/10 px-3 py-1 text-xs font-bold text-white/90">
             Most popular
@@ -53,6 +63,7 @@ export default function Pricing() {
           </a>
         </div>
 
+        {/* Team */}
         <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
           <h3 className="font-bold">Team</h3>
           <p className="mt-2 text-3xl font-black">
@@ -73,10 +84,6 @@ export default function Pricing() {
           </a>
         </div>
       </div>
-
-      <p className="mt-4 text-xs text-white/50">
-        Tip: if you don’t have pricing yet, delete this whole section.
-      </p>
     </section>
   );
 }
