@@ -1,8 +1,16 @@
+import Image from "next/image";
+
 export default function TopBar() {
   return (
     <header className="sticky top-3 z-20 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-slate-950/60 px-3 py-3 backdrop-blur">
       <div className="flex items-center gap-2">
-        <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-400 shadow-lg shadow-black/30" />
+        <Image
+          src="/assets/logo.png"
+          alt="OwnerDesk Logo"
+          width={36}
+          height={36}
+          className="rounded-xl"
+        />
         <div className="font-semibold tracking-tight">OwnerDesk</div>
       </div>
 
