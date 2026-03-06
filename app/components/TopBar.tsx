@@ -48,7 +48,7 @@ export default function TopBar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/assets/logo.png"
+            src="/logo_ownerdesk.svg"
             alt="OwnerDesk Logo"
             width={36}
             height={36}
